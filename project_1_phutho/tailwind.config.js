@@ -2,7 +2,11 @@
 module.exports = {
     content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
     theme: {
-        extend: {},
+        extend: {
+            aspectRatio: {
+                '4/6': '4 / 6',
+            },
+        },
         colors: {
             cyan: '#99FFFF',
             white: '#FFF',
@@ -17,7 +21,7 @@ module.exports = {
             'blue-50': '#E6EEF7',
             'blue-300': '#6698CA',
             'blue-500': '#0054A6',
-            'blue-600': '##003F7D',
+            'blue-600': '#003F7D',
 
             //gray
             'gray-500': '#666666',
@@ -25,5 +29,6 @@ module.exports = {
             'gray-700': '#333333',
         },
     },
-    plugins: [],
+
+    plugins: [require('@xpd/tailwind-3dtransforms')],
 };
