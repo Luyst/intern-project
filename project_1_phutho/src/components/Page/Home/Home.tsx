@@ -35,9 +35,11 @@ function Home() {
                 <div className="text-helvetica italic">Ngày thành lập 01/01/2019</div>
             </div>
             <Carousel />
-            {home.about && <About data={home.about} />}
-            {home.newPost && <HomePost data={home.newPost} />}
-            {home.service && <HomeService data={home.service} />}
+            <div className="rounded-xl overflow-hidden">
+                {home.about && <About data={home.about} />}
+                {home.newPost && <HomePost data={home.newPost} />}
+                {home.service && <HomeService data={home.service} />}
+            </div>
         </div>
     );
 }

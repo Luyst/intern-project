@@ -2,7 +2,7 @@ function About({ data }: { data: any }) {
     const text: string[] = data.content.split(/ \/|: /);
 
     return (
-        <div className="about-container flex flex-row  bg-white bg-opacity-70 p-12 rounded-xl">
+        <div className="about-container flex flex-row  bg-white bg-opacity-70 p-12">
             <div className="main pe-5 flex flex-col gap-2">
                 <div className="title">
                     <div className="subTitle">Về chúng tôi</div>

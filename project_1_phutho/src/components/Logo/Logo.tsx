@@ -1,14 +1,10 @@
-type Dimension = {
-    width: number;
-    height: number;
-};
-
+import { Dimension } from '~/typeComponent';
 type LogoProps = {
     size: number;
 };
 
 function Logo({ size }: LogoProps) {
-    let logoSize: Dimension = { width: 142, height: 89 }; // Default size
+    let logoSize: Dimension = { width: 142, height: 89 };
 
     switch (size) {
         case 1:
@@ -17,9 +13,8 @@ function Logo({ size }: LogoProps) {
         case 2:
             logoSize = { width: 120, height: 75 };
             break;
-        // Add more cases as needed
         default:
-            logoSize = { width: 142, height: 89 }; // Default to original size
+            logoSize = { width: 142, height: 89 };
     }
 
     return (
