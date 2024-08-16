@@ -6,6 +6,9 @@ module.exports = {
             aspectRatio: {
                 '4/6': '4 / 6',
             },
+            maxWidth: {
+                88: '22rem',
+            },
         },
         colors: {
             cyan: '#99FFFF',

@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getAllDocuments } from '~/firebase/service';
 import CarouselCard from './CarouselCard';
+import './Carousel.css';
 
 function Carousel() {
-    const [carouselList, setCarouselList] = useState<any[]>([]); // Initialize state with an empty array
+    const [carouselList, setCarouselList] = useState<any[]>([]);
+    const [center, setCenter] = useState(2);
 
     useEffect(() => {
         const fetchCarousel = async () => {
@@ -17,10 +19,28 @@ function Carousel() {
 
         fetchCarousel();
     }, []);
+
+    const handleCardClick = (index: number) => {
+        setCenter(index);
+    };
+
+    // Tính toán lại vị trí của các thẻ dựa trên chỉ số của `center`
+    const getOrderedCarouselList = () => {
+        const length = carouselList.length;
+        return carouselList.map((_, index) => carouselList[(index + center) % length]);
+    };
+
+    const orderedCarouselList = getOrderedCarouselList();
+
     return (
-        <div className=".carousel-container w-full pb-60 flex flex-row justify-center perspective-800 *:transform ">
-            {carouselList.map((item) => (
-                <CarouselCard card={item} />
+        <div className="carousel-container w-full pb-60 flex flex-row justify-center items-center perspective-800">
+            {orderedCarouselList.map((item, index) => (
+                <CarouselCard
+                    key={'card' + index}
+                    card={item}
+                    isActive={index === center}
+                    onClick={() => handleCardClick(index)}
+                />
             ))}
         </div>
     );

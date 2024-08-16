@@ -28,7 +28,7 @@ function Home() {
     }, []);
     console.log(home);
     return (
-        <div className="flex flex-col items-center px-40">
+        <div className="flex flex-col items-center px-32 ">
             <div className="text-title text-white flex flex-col items-center pb-10">
                 <div className="text-2xl font-bold">CÔNG TY CỔ PHẦN DỊCH VỤ DU LỊCH PHÚ THỌ</div>
                 <div className="text-helvetica text-4xl tracking-widest text-cyan font-bold">PHUTHOTOURIST</div>

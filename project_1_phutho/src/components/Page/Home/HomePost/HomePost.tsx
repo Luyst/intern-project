@@ -28,7 +28,7 @@ function HomePost({ data }: { data: any }) {
                 </div>
             </div>
             <div className="button">
-                <Button text="Xem thêm bài viết" primary size={1}></Button>
+                <Button text="Xem thêm bài viết" primary size={2}></Button>
             </div>
         </div>
     );

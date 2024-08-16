@@ -8,7 +8,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col justify-between min-h-dvh">
             <Header />
             <Background />
-            <div className="pt-28">
+            <div className="py-28">
                 <Outlet />
             </div>
             <Footer />
