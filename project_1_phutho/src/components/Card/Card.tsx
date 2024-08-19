@@ -6,7 +6,11 @@ const Card: React.FC<CardType> = ({ imageUrl, author, title, content, type, view
     return (
         <div className="cardContainer bg-white rounded-xl overflow-hidden max-w-88">
             <div className="thumbnail w-full aspect-video">
-                <img src={imageUrl} alt="Card-image" className="card-image w-full h-full object-cover" />
+                <img
+                    src={imageUrl}
+                    alt="Card-image"
+                    className="card-image w-full h-full object-cover hover:scale-110     ease-in-out duration-300"
+                />
             </div>
             <div className="card-body p-6 flex flex-col gap-4 text-gray-500">
                 <div className="text-gray-400">{author}</div>
@@ -20,9 +24,9 @@ const Card: React.FC<CardType> = ({ imageUrl, author, title, content, type, view
                         <Button text="Tin tức" size={1} secondary />
                     </div>
                     <div className="text-gray-400 type flex flex-row gap-2">
-                        <div>{view} lượt xem</div>
+                        <div>10N lượt xem</div>
                         <div>•</div>
-                        <div>{date}</div>
+                        <div>20/02/2020</div>
                     </div>
                 </div>
             </div>

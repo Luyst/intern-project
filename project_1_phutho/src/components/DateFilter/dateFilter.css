@@ -1,0 +1,28 @@
+.dateFilterContainer {
+    position: relative;
+}
+
+.dateStartContainer,
+.dateEndContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.dateInput {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.calendarIcon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.react-datepicker {
+    position: absolute;
+    z-index: 1000;
+    top: 40px; /* Điều chỉnh vị trí của lịch */
+}

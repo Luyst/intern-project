@@ -23,3 +23,9 @@ export type ButtonType = {
     secondary?: boolean;
     onClick?: ReactEventHandler;
 };
+
+export type DocCardType = {
+    id: string;
+    title: string;
+    imageUrl: string;
+};
