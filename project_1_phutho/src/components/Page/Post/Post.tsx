@@ -1,12 +1,18 @@
 import PageTitle from '~/components/PageTitle';
 import postData from './Posts.json';
 import PostDisplay from './PostDisplay';
+import PostSidebar from './PostSidebar';
+import PostSlider from './PostSlider';
 
 function Post() {
     return (
-        <div className="flex flex-col items-center gap-12 px-32">
+        <div className="flex flex-col items-center gap-6 px-32">
             <PageTitle title="Bài viết" />
-            <PostDisplay post={postData} />
+            <PostSlider post={postData} />
+            <div className="flex flex-row gap-6">
+                <PostSidebar />
+                <PostDisplay post={postData} />
+            </div>
         </div>
     );
 }

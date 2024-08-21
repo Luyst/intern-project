@@ -13,6 +13,7 @@ export type CardType = {
     type?: string[];
     view?: string;
     date?: string;
+    size?: number;
 };
 
 export type ButtonType = {

@@ -1,11 +1,18 @@
 import React from 'react';
-
-const Seacrch: React.FC = ({}) => {
-    let buttonSize: string = '';
-
+import { SearchIcon } from '../Icons';
+const Seacrch: React.FC = () => {
     return (
-        <div className="SearchContainer">
-            <input type="text" name="Search" id="Button" />
+        <div className="SearchContainer relative">
+            <input
+                type="text"
+                name="Search"
+                id="Button"
+                className="py-2 ps-10 rounded-md min-w-72 focus:outline-none border-2 border-white focus:border-blue-500 "
+                placeholder="Tìm kiếm"
+            />
+            <span className="absolute left-3 translate-y-2">
+                <SearchIcon color="#0054A6" />
+            </span>
         </div>
     );
 };

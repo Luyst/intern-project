@@ -2,14 +2,14 @@ import React from 'react';
 import { CardType } from '~/typeComponent';
 import Button from '../Button';
 
-const Card: React.FC<CardType> = ({ imageUrl, author, title, content, type, view, date, size = 3 }) => {
+const Tag: React.FC<CardType> = ({ imageUrl, author, title, content, type, view, date, size = 3 }) => {
     let titleSize: string = '';
     let textSize: string = '';
     let paddingSize: string = '';
 
     switch (size) {
         case 1:
-            titleSize = 'text-sm';
+            titleSize = 'text-xs';
             textSize = 'text-xs';
             paddingSize = 'p-2';
             break;
@@ -27,25 +27,18 @@ const Card: React.FC<CardType> = ({ imageUrl, author, title, content, type, view
     }
 
     return (
-        <div className="cardContainer bg-white rounded-xl  overflow-hidden max-w-88">
-            <div className="thumbnail w-full aspect-video">
+        <div className="cardContainer bg-white rounded-md flex  overflow-hidden max-w-96">
+            <div className="thumbnail aspect-square h-20">
                 <img
                     src={imageUrl}
-                    alt="Card-image"
+                    alt="Tag-image"
                     className="card-image w-full h-full object-cover hover:scale-110     ease-in-out duration-300"
                 />
             </div>
-            <div className={`card-body ${paddingSize} flex flex-col gap-2 text-gray-500`}>
-                <div className={`text-gray-400 ${textSize}`}>{author}</div>
-                <div className={`text-blue-500 font-bold ${titleSize}`}>{title}</div>
-                <div className="text-gray-500">{content}</div>
+            <div className={`card-body ${paddingSize} flex flex-col gap-1 justify-center text-gray-500`}>
+                <div className={`text-gray-500 font-bold ${titleSize}`}>{title}</div>
 
                 <div className="moreInfor flex flex-col gap-2">
-                    <div className="type flex flex-row gap-1">
-                        <Button text="Sự kiện" size={size} secondary />
-                        <Button text="Thông báo" size={size} secondary />
-                        <Button text="Tin tức" size={size} secondary />
-                    </div>
                     <div className={`text-gray-400 type flex flex-row gap-2 ${textSize}`}>
                         <div>10N lượt xem</div>
                         <div>•</div>
@@ -57,4 +50,4 @@ const Card: React.FC<CardType> = ({ imageUrl, author, title, content, type, view
     );
 };
 
-export default Card;
+export default Tag;

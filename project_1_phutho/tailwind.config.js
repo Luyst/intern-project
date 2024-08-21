@@ -10,6 +10,9 @@ module.exports = {
             maxWidth: {
                 88: '22rem',
             },
+            height: {
+                '66dvh': '66dvh',
+            },
         },
         colors: {
             cyan: '#99FFFF',
