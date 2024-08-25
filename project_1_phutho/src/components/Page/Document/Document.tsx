@@ -5,7 +5,7 @@ import tableDate from './tableData.json';
 
 function Document() {
     return (
-        <div className="DocumentContainer px-32 flex flex-col items-center gap-10">
+        <div className="DocumentContainer px-32 flex flex-col items-center gap-6">
             <PageTitle title="Tài liệu" />
             <DocHeader />
             <DocTable docs={tableDate} />

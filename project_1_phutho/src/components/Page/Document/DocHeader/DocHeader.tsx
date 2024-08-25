@@ -6,10 +6,6 @@ import { MoreIcon } from '~/components/Icons';
 function DocHeader() {
     const [cardQuantity, setCardQuantity] = useState(8); // Sử dụng useState đúng cách
 
-    const handleShowMore = () => {
-        // Tăng thêm 8 hoặc tới khi hết data
-    };
-
     return (
         <div>
             <div className="DocHeader-container grid grid-cols-4 gap-4">
@@ -18,9 +14,13 @@ function DocHeader() {
                 ))}
             </div>
             {cardQuantity < docs.length && (
-                <div className="flex justify-center mt-10 animate-bounce cursor-pointer" onClick={handleShowMore}>
+                <a
+                    href="#goToDocTable"
+                    id="goToDocTable"
+                    className="flex justify-center my-10 animate-bounce cursor-pointer"
+                >
                     <MoreIcon />
-                </div>
+                </a>
             )}
         </div>
     );

@@ -15,7 +15,10 @@ type DocTableProps = {
 
 const DocTable: React.FC<DocTableProps> = ({ docs }) => {
     return (
-        <div className="DocTable-container w-full flex flex-col gap-4 items-center justify-center bg-white bg-opacity-70 p-12 rounded-lg shadow-black shadow-md">
+        <div
+            id="doctable-container"
+            className="doctable-container w-full flex flex-col gap-4 items-center justify-center bg-white bg-opacity-70 p-12 rounded-lg shadow-black shadow-md"
+        >
             <div className="tableHeader flex justify-between w-full ">
                 <div className="dateFilter">
                     <div className="title text-lg font-semibold text-blue-500">Ngày tạo</div>

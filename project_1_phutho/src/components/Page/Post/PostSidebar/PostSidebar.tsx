@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IdeaIcon, NewsIcon, EventIcon, NotificationIcon, FolderIcon, PeopleIcon } from '~/components/Icons';
+import Logo from '~/components/Logo';
 
 const sidebarItems = [
     {
@@ -33,7 +34,7 @@ function PostSidebar() {
     const [active, setActive] = useState(0);
 
     return (
-        <div className="postSiderbar flex flex-col p-6 bg-white bg-opacity-70 min-w-80 rounded-xl gap-6">
+        <div className="postSiderbar relative flex flex-col p-6 bg-white bg-opacity-70 min-w-80 max-w-88 rounded-xl gap-6 overflow-hidden">
             <div className="text-title uppercase text-blue-500 font-bold text-2xl text-center">Chủ đề bài viết</div>
 
             <div className="flex flex-col gap-4">
@@ -54,6 +55,9 @@ function PostSidebar() {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="absolute bottom-0 translate-x-6 translate-y-2 opacity-15">
+                <Logo size={3} />
             </div>
         </div>
     );

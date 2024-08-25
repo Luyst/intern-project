@@ -1,7 +1,15 @@
 import React from 'react';
 import { ButtonType } from '~/typeComponent';
 
-const Button: React.FC<ButtonType> = ({ text, size, outline = false, primary = false, secondary = false, onClick }) => {
+const Button: React.FC<ButtonType> = ({
+    text,
+    size,
+    color = 'blue-500',
+    outline = false,
+    primary = false,
+    secondary = false,
+    onClick,
+}) => {
     let buttonSize: string = '';
 
     switch (size) {
@@ -22,9 +30,9 @@ const Button: React.FC<ButtonType> = ({ text, size, outline = false, primary = f
         'btn',
         'text-nowrap',
         buttonSize,
-        outline ? 'border border-blue-500 rounded-lg px-6 py-2 ' : '',
-        primary ? 'bg-blue-500 text-white rounded-lg px-6 py-2 ' : '',
-        secondary ? 'btn-secondary bg-blue-50 text-blue-500 rounded-full' : '',
+        outline ? `border border-${color} rounded-lg px-6 py-2 ` : '',
+        primary ? `bg-${color} text-white rounded-lg px-6 py-2 ` : '',
+        secondary ? `btn-secondary bg-blue-50 text-${color} rounded-full` : '',
         'font-semibold',
     ].join(' ');
 

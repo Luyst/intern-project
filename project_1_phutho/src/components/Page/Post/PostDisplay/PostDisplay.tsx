@@ -7,7 +7,10 @@ function PostDisplay({ post }: { post: CardType[] }) {
     return (
         <div className="postDisplay flex flex-col w-full gap-5">
             <div className="header bg-white bg-opacity-70 flex flex-row justify-between items-center p-3 rounded-xl">
-                <Search />
+                <div>
+                    <Search />
+                </div>
+
                 <DateFilter />
             </div>
             <div className="body grid grid-cols-4 gap-4">

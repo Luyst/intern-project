@@ -13,6 +13,9 @@ function Logo({ size }: LogoProps) {
         case 2:
             logoSize = { width: 120, height: 75 };
             break;
+        case 3:
+            logoSize = { width: 440, height: 280 };
+            break;
         default:
             logoSize = { width: 142, height: 89 };
     }

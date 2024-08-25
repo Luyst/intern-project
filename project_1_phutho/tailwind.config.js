@@ -5,7 +5,7 @@ module.exports = {
         extend: {
             aspectRatio: {
                 '4/6': '4 / 6',
-                'doc-card': '5/7',
+                'doc-card': '2/3',
             },
             maxWidth: {
                 88: '22rem',

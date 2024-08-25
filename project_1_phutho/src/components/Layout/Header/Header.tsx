@@ -17,7 +17,7 @@ function Header() {
     return (
         <div className="header bg-blue-background text-white flex flex-row gap-12 justify-center uppercase items-center fixed z-50 w-full border-b border-white">
             {headerNav.map((nav, index) => (
-                <Link key={index} className="p-3 text-title text-xl" to={nav.path}>
+                <Link key={index} className="p-3 text-title text-xl underline-offset-8 hover:underline" to={nav.path}>
                     {nav.title === 'Logo' ? (
                         <Logo size={1} />
                     ) : (

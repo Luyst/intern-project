@@ -19,6 +19,7 @@ export type CardType = {
 export type ButtonType = {
     text: string;
     size: number;
+    color?: string;
     outline?: boolean;
     primary?: boolean;
     secondary?: boolean;
