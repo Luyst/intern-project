@@ -7,6 +7,9 @@ function Logo({ size }: LogoProps) {
     let logoSize: Dimension = { width: 142, height: 89 };
 
     switch (size) {
+        case 0:
+            logoSize = { width: 75, height: 45 };
+            break;
         case 1:
             logoSize = { width: 100, height: 60 };
             break;

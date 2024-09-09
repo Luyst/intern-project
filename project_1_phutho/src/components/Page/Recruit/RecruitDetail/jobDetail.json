@@ -1,0 +1,45 @@
+{
+    "jobDetailDemo": {
+        "jobName": "Nhân viên thiết kế đồ họa",
+        "jobType": "Nhân viên chính thức",
+        "place": "CVVH Đầm Sen",
+        "timePosted": "2 tuần trước",
+        "status": "Đang tuyển"
+    },
+    "jobDetail": {
+        "position": "Nhân viên thiết kế đồ họa",
+        "numberOfPositions": 2,
+        "workplace": "Công viên văn hóa Đầm Sen",
+        "workAddress": "3 Hòa Bình, Phường 3, Quận 11, TP.HCM",
+        "jobDescription": [
+            "Thiết kế hình ảnh, brochure, banner, poster, pano, backdrop sân khấu, các loại vé mời... và các ấn phẩm phục vụ sự kiện, truyền thông của công viên.",
+            "Chụp hình, quay phim, dựng video đơn giản.",
+            "Lên phương thảo, trao đổi ý tưởng với quản lý và hoàn thiện thiết kế.",
+            "Các chi tiết về công việc được trao đổi tại buổi phỏng vấn."
+        ],
+        "workingDays": "---",
+        "workingHours": "Giờ hành chính",
+        "benefits": [
+            "Được ký hợp đồng lao động, tham gia đầy đủ chế độ BHXH.",
+            "Thưởng tháng 13, 14, các ngày lễ, tết trong năm.",
+            "Được phục vụ bữa ăn trưa tại nơi làm việc.",
+            "Được trang bị đồng phục, huấn luyện sức khỏe định kỳ hằng năm.",
+            "Được tham gia Bảo Hiểm tai nạn 24/24.",
+            "Nghỉ phép: 12 ngày/năm, cộng dồn 5 năm thành 1 ngày.",
+            "Được tham gia miễn phí các khóa đào tạo nâng cao nghiệp vụ.",
+            "Môi trường làm việc thân thiện, nhiều cơ hội học hỏi từ đội ngũ quản lý, nhân sự giàu kinh nghiệm, nhiệt huyết.",
+            "Các chế độ khác: Quà sinh nhật, cưới hỏi và lễ tết. Quà trung thu, quà tết, quà thiếu nhi 1/6.",
+            "Hỗ trợ đám ma, cưới hỏi, sinh con. Tham gia Ngày hội Gia đình, Ngày hội Tuổi thơ, hoạt động văn thể mỹ hằng năm."
+        ],
+        "requirements": [
+            "Tốt nghiệp từ Cao đẳng chuyên ngành Mỹ thuật, Đồ họa...",
+            "Sử dụng thành thạo các phần mềm thiết kế (Photoshop, Corel, Illustrator,...).",
+            "Có khả năng quay và dựng video hợp để nhận người xem.",
+            "Sử dụng thành thạo máy ảnh, máy quay, flycam...",
+            "Có khiếu thẩm mỹ, sáng tạo, chủ động trong công việc.",
+            "Có thể làm việc cuối tuần, lễ tết theo đặc thù kinh doanh Công viên Giải trí."
+        ],
+        "ageRequirement": "22 - 27 tuổi",
+        "educationRequire": "Cao đẳng"
+    }
+}

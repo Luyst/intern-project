@@ -42,7 +42,7 @@ function RecruitSidebar() {
             <div className="flex flex-col gap-6">
                 {Object.entries(jobCategories).map(([category, items]) => (
                     <div key={category}>
-                        <div className="font-bold">{category}</div>
+                        <div className="font-bold text-blue-500 text-xl">{category}</div>
                         <div className="list-inside flex flex-row flex-wrap gap-2">
                             {items.map((item) => (
                                 <div

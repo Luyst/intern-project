@@ -33,7 +33,7 @@ function Carousel() {
     const orderedCarouselList = getOrderedCarouselList();
 
     return (
-        <div className="carousel-container w-full pb-60 flex flex-row justify-center items-center perspective-800">
+        <div className="carousel-container w-dvw  pb-20 sm:pb-60 flex flex-row justify-center items-center perspective-800 overflow-hidden">
             {orderedCarouselList.map((item, index) => (
                 <CarouselCard
                     key={'card' + index}

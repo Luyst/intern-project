@@ -28,7 +28,7 @@ const DateFilter: React.FC = () => {
                 >
                     <CalendarIcon />
                 </span>
-                <div className="absolute top-10 ">
+                <div className="absolute top-10 z-10 ">
                     {showStartDatePicker && (
                         <DatePicker
                             selected={startDate}
@@ -67,7 +67,7 @@ const DateFilter: React.FC = () => {
                     <CalendarIcon />
                 </span>
                 {showEndDatePicker && (
-                    <div className="absolute top-10">
+                    <div className="absolute top-10 z-10">
                         <DatePicker
                             selected={endDate}
                             onChange={(date) => {

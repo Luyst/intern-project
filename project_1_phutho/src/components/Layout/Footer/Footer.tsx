@@ -4,7 +4,7 @@ import UnitContainer from './UnitContainer';
 
 function Footer() {
     return (
-        <footer className="footer-container bg-footer-background py-6 px-20 flex flex-row justify-between gap-10 text-white">
+        <footer className="footer-container bg-footer-background py-6 sm:px-20 px-4 flex flex-col sm:flex-row justify-between gap-10 text-white">
             <div className="footer-logo flex flex-col justify-between">
                 <div className="logo-container flex flex-row items-center">
                     <img className="w-80" src={logo} alt="" />

@@ -4,11 +4,13 @@ function About({ data }: { data: any }) {
     const text: string[] = data.content.split(/ \/|: /);
 
     return (
-        <div className="about-container flex flex-row  bg-white bg-opacity-70 p-12">
-            <div className="main pe-5 flex flex-col gap-5 w-3/5">
+        <div className="about-container w-full  flex flex-col sm:flex-row  bg-white bg-opacity-70 sm:p-12">
+            <div className="main sm:pe-5 flex flex-col gap-5 sm:w-3/5">
                 <div className="title">
-                    <div className="subTitle">Về chúng tôi</div>
-                    <div className="mainTitle text-title text-4xl text-blue-600 font-bold">{data.title}</div>
+                    <div className="subTitle sm:text-base text-xs">Về chúng tôi</div>
+                    <div className="mainTitle text-title  text-xl md:text-4xl text-blue-600 font-bold">
+                        {data.title}
+                    </div>
                     <div className="devide h-1.5 w-28 rounded-full mt-2 bg-blue-600"> </div>
                 </div>
                 <div className="content">
@@ -28,7 +30,7 @@ function About({ data }: { data: any }) {
                     <Button text="Xem chi tiết" size={2} primary />
                 </div>
             </div>
-            <div className="image relative w-2/5">
+            <div className="image relative min-h-96 sm:w-2/5">
                 <div className="w-10/12 rounded-3xl overflow-hidden absolute top-0 border-8 border-white shadow-md">
                     <img src={data.image[0]} alt="about img" />
                 </div>

@@ -14,11 +14,11 @@ const CarouselCard: FC<CardProps> = ({ card, isActive, onClick }) => {
         <div
             className={`carousel-item ${
                 isActive ? 'active' : ''
-            } w-dvw flex flex-row justify-center relative overflow-hidden aspect-4/6`}
+            } min-w-72 md:min-w-0 flex flex-row justify-center relative overflow-hidden aspect-4/6`}
             onClick={onClick}
         >
             <img className="object-cover h-full w-full" src={card.image} alt="carousel" />
-            <div className="absolute font-semibold text-white bottom-4 px-2">{card.content}</div>
+            <div className="absolute font-semibold sm:text-base text-xs text-white bottom-4 px-2">{card.content}</div>
         </div>
     );
 };

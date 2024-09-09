@@ -14,8 +14,8 @@ function Background() {
     }, []);
 
     return (
-        <div className="background w-dvw fixed -z-20">
-            <video className="w-full" src={background} autoPlay loop muted></video>
+        <div className="background w-dvw h-dvh fixed -z-20 overflow-hidden">
+            <video className="h-full w-full object-cover" src={background} autoPlay loop muted></video>
         </div>
     );
 }

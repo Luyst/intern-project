@@ -27,15 +27,26 @@ module.exports = {
             //blue
             'blue-50': '#E6EEF7',
             'blue-300': '#6698CA',
+            'blue-400': '#3376B8',
             'blue-500': '#0054A6',
             'blue-600': '#003F7D',
 
             //gray
             'gray-50': '#F0F0F0',
+            'gray-200': '#C2C2C2',
+            'gray-300': '#C2C2C2',
             'gray-400': '#858585',
             'gray-500': '#666666',
             'gray-600': '#4D4D4D',
             'gray-700': '#333333',
+
+            //green
+            'green-50': '#E6F7E6',
+            'green-500': '#03A600',
+
+            //red
+            'red-50': '#F7E6E6',
+            'red-500': '#FF3939',
         },
     },
 

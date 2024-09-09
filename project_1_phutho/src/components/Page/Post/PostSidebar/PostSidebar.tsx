@@ -34,7 +34,7 @@ function PostSidebar() {
     const [active, setActive] = useState(0);
 
     return (
-        <div className="postSiderbar relative flex flex-col p-6 bg-white bg-opacity-70 min-w-80 max-w-88 rounded-xl gap-6 overflow-hidden">
+        <div className="postSiderbar relative hidden sm:flex flex-col p-6 bg-white bg-opacity-70 min-w-80 max-w-88 rounded-xl gap-6 overflow-hidden">
             <div className="text-title uppercase text-blue-500 font-bold text-2xl text-center">Chủ đề bài viết</div>
 
             <div className="flex flex-col gap-4">

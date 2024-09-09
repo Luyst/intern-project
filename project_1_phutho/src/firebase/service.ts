@@ -6,7 +6,6 @@ const getAllDocuments = async (collectionName: string) => {
         const colRef = collection(db, collectionName);
 
         const snapshot = await getDocs(colRef);
-        console.log(snapshot.docs);
         const documents = snapshot.docs.map((doc) => ({
             id: doc.id,
             ...doc.data(),
