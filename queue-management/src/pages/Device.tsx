@@ -1,0 +1,8 @@
+// src/pages/Devices.tsx
+import React from 'react';
+
+const Devices: React.FC = () => {
+    return <h1>Devices</h1>;
+};
+
+export default Devices;
