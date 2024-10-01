@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
-
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 function App() {
     return (
-        <div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
             <Router>
                 <Routes>
                     {publicRoutes.map((route, index) => (
@@ -16,7 +17,7 @@ function App() {
                     ))}
                 </Routes>
             </Router>
-        </div>
+        </LocalizationProvider>
     );
 }
 

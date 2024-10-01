@@ -41,7 +41,7 @@ const Menubar: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-between rounded shadow bg-white">
             <div className="menubar-header flex flex-col items-center">
-                <div className="w-20 m-6">
+                <div className="w-20 m-10">
                     <img src={logo} alt="Logo" />
                 </div>
                 <div className="flex flex-col items-start w-full">
