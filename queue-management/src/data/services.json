@@ -1,0 +1,122 @@
+[
+    {
+        "id": "KIO_01",
+        "serviceName": "Kiosk",
+        "decription": "Best service",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_02",
+        "serviceName": "Printer",
+        "decription": "High-quality printing service",
+        "isWorking": false
+    },
+    {
+        "id": "KIO_03",
+        "serviceName": "Scanner",
+        "decription": "Fast document scanning service",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_04",
+        "serviceName": "Photocopier",
+        "decription": "Efficient photocopying solutions",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_05",
+        "serviceName": "Fax Machine",
+        "decription": "Reliable fax services",
+        "isWorking": false
+    },
+    {
+        "id": "KIO_06",
+        "serviceName": "Computer",
+        "decription": "High-speed internet access",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_07",
+        "serviceName": "Tablet",
+        "decription": "Portable device for easy access",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_08",
+        "serviceName": "Coffee Machine",
+        "decription": "Fresh coffee brewed on demand",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_09",
+        "serviceName": "Water Dispenser",
+        "decription": "Hot and cold water available",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_10",
+        "serviceName": "Air Conditioner",
+        "decription": "Comfortable climate control",
+        "isWorking": false
+    },
+    {
+        "id": "KIO_11",
+        "serviceName": "Projector",
+        "decription": "High-definition projection service",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_12",
+        "serviceName": "Speaker System",
+        "decription": "High-quality audio output",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_13",
+        "serviceName": "Television",
+        "decription": "Enjoy live broadcasts and shows",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_14",
+        "serviceName": "Sound Mixer",
+        "decription": "Professional sound mixing service",
+        "isWorking": false
+    },
+    {
+        "id": "KIO_15",
+        "serviceName": "Whiteboard",
+        "decription": "Interactive brainstorming sessions",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_16",
+        "serviceName": "Chalkboard",
+        "decription": "Traditional teaching tool",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_17",
+        "serviceName": "Virtual Assistant",
+        "decription": "AI-driven assistance for your tasks",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_18",
+        "serviceName": "Lockers",
+        "decription": "Secure storage for your belongings",
+        "isWorking": true
+    },
+    {
+        "id": "KIO_19",
+        "serviceName": "Internet Hub",
+        "decription": "Central access point for internet",
+        "isWorking": false
+    },
+    {
+        "id": "KIO_20",
+        "serviceName": "Charging Station",
+        "decription": "Quick charging for all devices",
+        "isWorking": true
+    }
+]

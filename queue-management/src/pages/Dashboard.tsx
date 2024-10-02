@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
     return (
         <div className="flex h-full">
             <div className="w-2/3 h-full flex flex-col gap-4 dashboard-main overflow-x-auto">
-                <div className="title text-orange-500 text-2xl font-bold">Biểu đồ cấp số</div>
+                <div className="text-title ">Biểu đồ cấp số</div>
                 <div className=" gap-3 grid grid-cols-4">
                     <Card
                         color="text-blue-500 bg-blue-100"

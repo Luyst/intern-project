@@ -1,8 +1,8 @@
-// src/pages/Dashboard.tsx
+// src/pages/Report.tsx
 import React from 'react';
 
-const Dashboard: React.FC = () => {
-    return <h1>Dashboard</h1>;
+const Report: React.FC = () => {
+    return <div className="text-title">Báo cáo</div>;
 };
 
-export default Dashboard;
+export default Report;
