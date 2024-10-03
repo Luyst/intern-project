@@ -4,8 +4,8 @@ import React from 'react';
 
 // Icon
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import StaticChart from '~/components/StaticChart';
-import Sumary from '~/components/Sumary';
+import StaticChart from './Component/ChartContainer';
+import Sumary from './Component/Sumary';
 
 const Dashboard: React.FC = () => {
     return (

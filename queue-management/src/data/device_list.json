@@ -1,138 +1,148 @@
-[
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    },
-    {
-        "id": "KIO_01",
-        "device_name": "Kiosk",
-        "ip": "192.168.1.10",
-        "isWork": true,
-        "isConnect": true,
-        "serviceDetail": "Khám tim mạch, Khám mắt, Khám mũi, Khám miếng, Khám đầu"
-    }
-]
+{
+    "title": [
+        "Mã thiết bị",
+        "Tên thiết bị",
+        "Địa chỉ IP",
+        "Trạng thái hoạt động",
+        "Trạng thái kết nối",
+        "Dịch vụ sử dụng"
+    ],
+    "data": [
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        },
+        {
+            "id": "KIO_01",
+            "device_name": "Kiosk",
+            "ip": "192.168.1.10",
+            "isWork": true,
+            "isConnect": true,
+            "serviceDetail": "Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát"
+        }
+    ]
+}

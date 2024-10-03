@@ -52,7 +52,7 @@ const Menubar: React.FC = () => {
                             className={`flex items-center cursor-default w-full p-3 font-semibold ${
                                 item.path === currentPage
                                     ? 'text-orange-50 bg-orange-500'
-                                    : 'text-gray-600 rounded hover:bg-orange-50 hover:text-orange-500'
+                                    : 'text-gray-400 rounded hover:bg-orange-50 hover:text-orange-500'
                             }`}
                         >
                             {/* Hiển thị icon active hoặc icon bình thường dựa trên trạng thái của route */}

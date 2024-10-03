@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TableRow,
-    Paper,
-    TablePagination,
-} from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TablePagination } from '@mui/material';
 
 interface TableComponentProps {
-    data: Record<string, any>[]; // Dữ liệu là mảng các đối tượng
-    titles: string[]; // Tiêu đề của bảng
-    renderCells: (key: string, item: Record<string, any>) => React.ReactNode; // Hàm render cho các ô
+    data: Record<string, any>[];
+    titles: string[];
+    detailShow?: boolean;
+    updateShow?: boolean;
+    renderCells: (key: string, item: Record<string, any>) => React.ReactNode;
 }
 
-const TableComponent: React.FC<TableComponentProps> = ({ data, titles, renderCells }) => {
+const TableComponent: React.FC<TableComponentProps> = ({
+    data,
+    titles,
+    renderCells,
+    detailShow = false,
+    updateShow = false,
+}) => {
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(5); // Số lượng hàng trên mỗi trang
 
@@ -30,22 +29,24 @@ const TableComponent: React.FC<TableComponentProps> = ({ data, titles, renderCel
     };
 
     return (
-        <div>
-            <TableContainer className="rounded-xl bg-white">
+        <div className="w-full">
+            <TableContainer className="rounded-xl bg-white w-full">
                 <Table>
-                    <TableHead>
-                        <TableRow>
+                    <TableHead className="bg-orange-400">
+                        <TableRow className="">
                             {titles.map((header, index) => (
                                 <TableCell
-                                    className="bg-orange-400"
+                                    className=" text-nowrap  border-orange-100 border-l-2"
                                     sx={{ fontWeight: '600', color: 'white' }}
-                                    align="center"
+                                    align="left"
                                     key={index}
                                 >
                                     {' '}
                                     {header}
                                 </TableCell>
                             ))}
+                            {detailShow && <TableCell className="border-orange-100 border-l-2"></TableCell>}
+                            {updateShow && <TableCell className="border-orange-100 border-l-2"></TableCell>}
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -53,13 +54,20 @@ const TableComponent: React.FC<TableComponentProps> = ({ data, titles, renderCel
                             <TableRow key={index}>
                                 {Object.keys(item).map((key) => (
                                     <TableCell
-                                        className={`${index % 2 !== 0 ? 'bg-orange-50' : 'bg-white'}`}
+                                        className={`   border-orange-100 border-l-2 ${
+                                            index % 2 !== 0 ? 'bg-orange-50' : 'bg-white'
+                                        }`}
                                         key={key}
-                                        align="center"
+                                        align="left"
+                                        padding="none"
                                     >
-                                        {renderCells(key, item)} {/* Gọi hàm renderCells để render ô */}
+                                        <div className="text-nowrap truncate max-w-60 text-sm p-3">
+                                            {renderCells(key, item)}
+                                        </div>
                                     </TableCell>
                                 ))}
+                                {detailShow && <TableCell>Chi tiết</TableCell>}
+                                {updateShow && <TableCell>Cập nhật</TableCell>}
                             </TableRow>
                         ))}
                     </TableBody>

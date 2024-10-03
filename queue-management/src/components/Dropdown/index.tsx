@@ -18,7 +18,7 @@ const Dropdown: React.FC<DropdownProps> = ({ items, defaultSelected = items[0], 
     };
 
     return (
-        <div className="select-time group min-w-24 relative rounded-lg flex items-center ps-2 gap-2 justify-between bg-white border border-gray-400">
+        <div className="drop-down group min-w-24 relative rounded-lg flex items-center ps-2 gap-2 justify-between bg-white border border-gray-400 hover:border-orange-500">
             <div className="selct-input capitalize">{selectedItem}</div>
             <div className="text-orange-500">
                 <ArrowDropDownIcon fontSize="large" />
