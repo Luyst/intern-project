@@ -17,7 +17,7 @@ const TableComponent: React.FC<TableComponentProps> = ({
     updateShow = false,
 }) => {
     const [page, setPage] = useState(0);
-    const [rowsPerPage, setRowsPerPage] = useState(5); // Số lượng hàng trên mỗi trang
+    const [rowsPerPage, setRowsPerPage] = useState(10); // Số lượng hàng trên mỗi trang
 
     const handleChangePage = (event: unknown, newPage: number) => {
         setPage(newPage);

@@ -1,23 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes } from '~/routes';
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import Main from '~/layouts/Main';
+import { Dashboard, Device, Login, Report, Service, Setting, Stat } from '~/pages';
+
 function App() {
     return (
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <Router>
-                <Routes>
-                    {publicRoutes.map((route, index) => (
-                        <Route key={index} path={route.path} element={<route.component />}>
-                            {route.children?.map((child, childIndex) => (
-                                <Route key={childIndex} path={child.path} element={<child.component />} />
-                            ))}
-                        </Route>
-                    ))}
-                </Routes>
-            </Router>
-        </LocalizationProvider>
+        <Router>
+            <Routes>
+                {/* Route cho Main Layout */}
+                <Route path="/" element={<Main />}>
+                    <Route index element={<Dashboard />} />
+                    <Route path="device" element={<Device />} />
+                    <Route path="service" element={<Service />} />
+                    <Route path="stat" element={<Stat />} />
+                    <Route path="report" element={<Report />} />
+                    <Route path="setting" element={<Setting />} />
+                </Route>
+                {/* Route cho trang Login */}
+                <Route path="/login" element={<Login />} />
+            </Routes>
+        </Router>
     );
 }
 

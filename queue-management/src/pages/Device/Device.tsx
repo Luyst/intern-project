@@ -4,6 +4,7 @@ import devices from '~/data/device_list.json';
 import Dropdown from '~/components/Dropdown';
 import { InputContainer } from '~/components/InputContainer';
 import Search from '~/components/Search';
+import Button from '~/components/Button';
 
 const Device: React.FC = () => {
     const [workingFilter, setWorkingFilter] = useState<string>('Tất cả');
@@ -24,51 +25,51 @@ const Device: React.FC = () => {
     return (
         <div className="device-container flex flex-col gap-3 w-full">
             <div className="text-title">Danh sách thiết bị</div>
+            <div className="device-main flex items-center justify-between">
+                <div className="table-device-container ">
+                    <div className="header-table-container flex justify-between mb-5 w-full">
+                        <div className="filter-container flex gap-4 *:w-72">
+                            <InputContainer title="Trạng thái hoạt động">
+                                <Dropdown
+                                    items={['Tất cả', 'Hoạt động', 'Ngừng hoạt động']}
+                                    defaultSelected={workingFilter}
+                                    onSelect={(item) => setWorkingFilter(item)}
+                                />
+                            </InputContainer>
 
-            <div className="table-device-container pe-20">
-                <div className="header-table-container flex justify-between mb-5 w-full">
-                    <div className="filter-container flex gap-4 *:w-72">
-                        <InputContainer title="Trạng thái hoạt động">
-                            <Dropdown
-                                items={['Tất cả', 'Hoạt động', 'Ngừng hoạt động']}
-                                defaultSelected={workingFilter}
-                                onSelect={(item) => setWorkingFilter(item)}
-                            />
-                        </InputContainer>
+                            <InputContainer title="Trạng thái kết nối">
+                                <Dropdown
+                                    items={['Tất cả', 'Kết nối', 'Mất kết nối']}
+                                    defaultSelected={connectingFilter}
+                                    onSelect={(item) => setConnectingFilter(item)}
+                                />
+                            </InputContainer>
+                        </div>
 
-                        <InputContainer title="Trạng thái kết nối">
-                            <Dropdown
-                                items={['Tất cả', 'Kết nối', 'Mất kết nối']}
-                                defaultSelected={connectingFilter}
-                                onSelect={(item) => setConnectingFilter(item)}
-                            />
-                        </InputContainer>
+                        <div className="search-container w-72">
+                            <InputContainer title="Từ khoá">
+                                <Search
+                                    placeHolder="Tìm từ khóa"
+                                    type="text"
+                                    onChange={(event) => setKeyWord(event.target.value)}
+                                />
+                            </InputContainer>
+                        </div>
                     </div>
 
-                    <div className="search-container w-72">
-                        <InputContainer title="Từ khoá">
-                            <Search
-                                placeHolder="Tìm từ khóa"
-                                type="text"
-                                onChange={(event) => setKeyWord(event.target.value)}
-                            />
-                        </InputContainer>
+                    <div className="main-table-device">
+                        <TableComponent
+                            data={devices.data}
+                            titles={devices.title}
+                            renderCells={renderCells}
+                            detailShow
+                            updateShow
+                        />
                     </div>
                 </div>
-
-                <div className="main-table-device">
-                    <TableComponent
-                        data={devices.data}
-                        titles={devices.title}
-                        renderCells={renderCells}
-                        detailShow
-                        updateShow
-                    />
+                <div className="add-device">
+                    <Button label="Thêm thiết bị" />
                 </div>
-            </div>
-            <div className="add-device">
-                Thêm thiết bị
-                <button></button>
             </div>
         </div>
     );
