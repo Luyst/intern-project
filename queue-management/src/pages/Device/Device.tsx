@@ -21,12 +21,11 @@ const Device: React.FC = () => {
         return item[key];
     };
 
-    console.log(keyWord);
     return (
         <div className="device-container flex flex-col gap-3 w-full">
             <div className="text-title">Danh sách thiết bị</div>
             <div className="device-main flex items-center justify-between">
-                <div className="table-device-container ">
+                <div className="table-device-container min-w-[1112px]">
                     <div className="header-table-container flex justify-between mb-5 w-full">
                         <div className="filter-container flex gap-4 *:w-72">
                             <InputContainer title="Trạng thái hoạt động">

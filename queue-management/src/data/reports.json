@@ -1,0 +1,75 @@
+{
+    "title": ["Số thứ tự", "Tên dịch vụ", "Thời gian cấp", "Trình trạng", "Nguồn vào"],
+    "data": [
+        {
+            "id": "2010001",
+            "service_name": "Khám tim mạch",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đang chờ",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010002",
+            "service_name": "Răng hàm mặt",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đã sử dụng",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010003",
+            "service_name": "Khám sản - phụ khoa",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Bỏ qua",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010004",
+            "service_name": "Răng hàm mặt",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đang chờ",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010005",
+            "service_name": "Tai mũi họng",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đang chờ",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010006",
+            "service_name": "Khám tổng quát",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Bỏ qua",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010007",
+            "service_name": "Khám hô hấp",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đang chờ",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010008",
+            "service_name": "Khám hô hấp",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đã sử dụng",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010009",
+            "service_name": "Tai mũi họng",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Bỏ qua",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010010",
+            "service_name": "Khám sản - phụ khoa",
+            "issue_time": "07:20 - 07/10/2021",
+            "status": "Đang chờ",
+            "source": "Hệ thống"
+        }
+    ]
+}

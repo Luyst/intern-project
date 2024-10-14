@@ -1,0 +1,86 @@
+{
+    "title": ["STT", "Tên khách hàng", "Tên dịch vụ", "Thời gian cấp", "Hạn sử dụng", "Trạng thái", "Nguồn cấp"],
+    "data": [
+        {
+            "id": "2010001",
+            "customer_name": "Lê Huỳnh Ái Vân",
+            "service_name": "Khám tim mạch",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đang chờ",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010002",
+            "customer_name": "Huỳnh Ái Vân",
+            "service_name": "Khám sản - Phụ khoa",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đã sử dụng",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010003",
+            "customer_name": "Lê Ái Vân",
+            "service_name": "Khám răng hàm mặt",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đang chờ",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010004",
+            "customer_name": "Nguyễn Ái Vân",
+            "service_name": "Khám tai mũi họng",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đang chờ",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010005",
+            "customer_name": "Trần Thị Ái Vân",
+            "service_name": "Khám hô hấp",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đang chờ",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010006",
+            "customer_name": "Lê Huỳnh Nghĩa",
+            "service_name": "Khám tổng quát",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đã sử dụng",
+            "source": "Kiosk"
+        },
+        {
+            "id": "2010007",
+            "customer_name": "Lê Huỳnh Đức",
+            "service_name": "Khám tổng quát",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Bỏ qua",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010008",
+            "customer_name": "Phạm Văn Mạnh",
+            "service_name": "Khám tổng quát",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đã sử dụng",
+            "source": "Hệ thống"
+        },
+        {
+            "id": "2010009",
+            "customer_name": "Lê Thị Cẩm Tiên",
+            "service_name": "Khám tai mũi họng",
+            "issue_time": "14:35 - 07/11/2021",
+            "expiration_time": "14:35 - 12/11/2021",
+            "status": "Đã sử dụng",
+            "source": "Kiosk"
+        }
+    ]
+}
